@@ -13,6 +13,7 @@ router.post("/post", async (req, res) => {
     }
 })
 
+
 // http://localhost:4000/api/movies/get
 router.get("/get", async (req, res) => {
     try {
