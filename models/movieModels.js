@@ -12,7 +12,7 @@ const add = (event) => {
 
 // HTTP put() request
 const update = (id, event) => {
-    return db("movies").where({id}).first().update(event)
+    return db("movies").where({id}).update(event)
 }
 
 // HTTP delete() request

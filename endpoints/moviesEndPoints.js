@@ -42,6 +42,20 @@ router.delete("/delete", async (req, res) => {
 })
 
 // http://localhost:4000/api/movies/put
+router.put("/put", async (req, res) => {
+    try {
+        const {id} = req.body
+        const body = req.body
+        const editMovie = await movies.update(id, body)
 
+        if (!id && !body) {
+            res.status(404).json({error: "Bad request"})
+        } else {
+            res.status(200).json(editMovie)
+        }
+    } catch (error) {
+        res.status(500).json({error: "Internal server error"})
+    }
+})
 
 module.exports = router;
