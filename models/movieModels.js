@@ -2,13 +2,17 @@ const db = require("../dbConfig");
 
 // HTTP get() request
 const find = () => {
-    return db("flashcards");
+    return db("movies");
 }
 
 // HTTP put() request
-const add = (qa) => {
-    return db("flashcards").insert(qa);
+const add = (event) => {
+    return db("movies").insert(event);
 } 
+
+// HTTP put() request
+
+// HTTP delete() request
 
 module.exports  = {
     add, 
