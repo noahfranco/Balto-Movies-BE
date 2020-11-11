@@ -11,10 +11,19 @@ const add = (event) => {
 } 
 
 // HTTP put() request
+const update = (id, event) => {
+    return db("movies").where({id}).first().update(event)
+}
 
 // HTTP delete() request
+const remove = (id) => {
+    return db("movies")
+    .where({id}).delete()
+}
 
 module.exports  = {
     add, 
-    find
+    find,
+    update, 
+    remove
 }

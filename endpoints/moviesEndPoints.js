@@ -25,4 +25,21 @@ router.get("/get", async (req, res) => {
 })
 
 
+// http://localhost:4000/api/movies/delete
+router.delete("/delete", async (req, res) => {
+    try {
+        const {id} = req.body
+        const deleteMovie = await movies.remove(id)
+
+        if (!id) {
+            res.status(200).json({error: "Bad request"})
+        } else {
+            res.status(200).json(deleteMovie)
+        }
+    } catch (error) {
+        res.status(500).json({error: "Internal server error"})
+    }  
+})
+
+
 module.exports = router;
