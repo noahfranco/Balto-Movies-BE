@@ -32,7 +32,7 @@ router.delete("/delete", async (req, res) => {
         const deleteMovie = await movies.remove(id)
 
         if (!id) {
-            res.status(200).json({error: "Bad request"})
+            res.status(404).json({error: "Bad request"})
         } else {
             res.status(200).json(deleteMovie)
         }
@@ -40,6 +40,8 @@ router.delete("/delete", async (req, res) => {
         res.status(500).json({error: "Internal server error"})
     }  
 })
+
+// http://localhost:4000/api/movies/put
 
 
 module.exports = router;
