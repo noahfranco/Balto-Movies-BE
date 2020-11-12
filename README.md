@@ -92,8 +92,6 @@ create a .env file that includes the following:
 
 \_DATABASE_URL - when migrating to production with Heroku, an environment variable becomes available to you called DATABASE_URL
 
-Heroku, an environment variable becomes available to you called DATABASE_URL
-
 ## Documentation
 
 See [Frontend Documentation](https://github.com/noahfranco/Balto-Movies-FE) for details on the frontend of the project.
