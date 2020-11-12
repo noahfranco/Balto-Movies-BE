@@ -1,3 +1,7 @@
+## Project Overview
+
+[Trello Board](https://trello.com/b/tXisUcW0/balto-movie-app)
+
 # API
 
 #### Backend delpoyed at [Heroku](https://tranquil-meadow-07587.herokuapp.com/) <br>
@@ -12,10 +16,11 @@ To get the server running locally:
 
 ### Backend Framework
 
-- Express for flexibility, simple routing, and Knex.js
-- Postgres for data persistence
+- Express for flexibility, simple routing
+- pg for data persistence
 - Helmet for security
 - Cors for cross browser compatibility
+- Knex.js for communicating with postgreSQl database
 
 ## Endpoints
 
