@@ -96,4 +96,4 @@ Heroku, an environment variable becomes available to you called DATABASE_URL
 
 ## Documentation
 
-See [Frontend Documentation](https://github.com/noahfranco/Balto-Movies-FE) for details on the frontend of our project.
+See [Frontend Documentation](https://github.com/noahfranco/Balto-Movies-FE) for details on the frontend of the project.
