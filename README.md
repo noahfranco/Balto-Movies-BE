@@ -63,7 +63,7 @@ To get the server running locally:
 }
 ```
 
-#### SEEDED TABLE && RESOURCES
+#### SEEDED TABLE && RESOURCES USED
 
 | csv          |
 | ------------ |
